@@ -1,3 +1,4 @@
+<div class="col-xs-9">
 
 <% @articles.each do |a| %>
 
@@ -27,29 +28,8 @@
 </div>
 
 <% end %>
-<!--  <div class="table-responsive">
-   <table class="table table-hover">
-     <thead>
-       <tr>
-         <th>Title</th>
-         <th>Text</th>
-       </tr>
-     </thead>
-     <tbody>
-        <% @articles.each do |a| %>
-
-
-       <tr>
-         <td> <%= a.title %></td>
-         <td> <%= a.text %></td>
-         <td><%= link_to "mostrar", article_path(a) %></td>
-         <td><%= link_to "edit", edit_article_path(a) %></td>
-         <td><%= link_to "delete", article_path(a) ,method: :delete , data:{ confirm:('desea eliminar el articulo ?')}%></td>
-       </tr>
-       <% end %>
-     </tbody>
-   </table>
-
-   <%= link_to 'Nuevo article',new_article_path%>
- </div>
- -->
+</div>
+<!-- aside -->
+<div class="col-xs-3 ">
+  <div class="aside"> <%= render 'last_article' %></div>
+</div>

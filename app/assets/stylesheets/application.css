@@ -17,7 +17,6 @@
  .header h2{
 
       font:400% bold;
-      margin-left: 50px
 
  }
 
@@ -55,10 +54,21 @@ margin: 20px;
 }
 
 .text{
-  margin: auto 50px
+  margin: auto 50px;
+  padding-bottom:10px;
 }
 .comments{
    margin: 20px 20px 10px 0px;
    text-align: right;
 }
 
+.comments-text{
+
+  margin-left: 20px;
+  padding:20px;
+  line-height: 15px
+}
+.comments-form{
+   margin:0 20px 0 60px;
+  text-align: right;
+}
