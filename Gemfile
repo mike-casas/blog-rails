@@ -37,8 +37,15 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+#gem para editor
+
+gem 'redactor-rails'
 
 
 gem "annotate", "~> 2.6.5"
 gem "roadie", "~> 2.4"
 gem "bootstrap-sass", "~> 3.3.1"
+
+#para truncar
+
+gem 'truncate_html'
