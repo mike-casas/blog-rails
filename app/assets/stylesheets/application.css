@@ -12,4 +12,77 @@
  *
  *= require_tree .
  *= require_self
+*= require redactor-rails
+
  */
+
+ .header h2{
+
+      font:400% bold;
+      text-align: center;
+
+
+ }
+
+.header{
+  margin: 20px auto
+}
+
+.article{
+   background:#E1E0E0;
+   border-radius: 10px;
+   margin: 10px
+}
+
+.date{
+   text-align: right;
+   margin: 30px 20px 0 0px;
+   font-size: 120%
+}
+.title{
+  margin: 20px;
+  font-size: 200%;
+  font-weight: bold;
+}
+.last-article{
+margin: 20px;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.last-article-text{
+  background:#E1E0E0;
+   border-radius: 5px;
+   margin: 20px;
+   padding: 5px
+}
+
+.text{
+  margin: auto 50px;
+  padding-bottom:10px;
+}
+.comments{
+   margin: 20px 20px 10px 0px;
+   text-align: right;
+}
+
+.comments-text{
+
+  margin-left: 20px;
+  padding:20px;
+  line-height: 15px
+}
+.comments-form{
+   margin:0 20px 0 60px;
+  text-align: right;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+  text-decoration: none;
+}
