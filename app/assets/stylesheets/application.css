@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+ .header h2{
+
+      font:400% bold;
+      margin-left: 50px
+
+ }
+
+.header{
+  margin: 20px auto
+}
+
+.article{
+   background:#E1E0E0;
+   border-radius: 10px;
+   margin: 10px
+}
+
+.date{
+   text-align: right;
+   margin: 30px 20px 0 0px;
+   font-size: 120%
+}
+.title{
+  margin: 20px;
+  font-size: 200%;
+  font-weight: bold;
+}
+.last-article{
+margin: 20px;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.last-article-text{
+  background:#E1E0E0;
+   border-radius: 5px;
+   margin: 20px;
+   padding: 5px
+}
+
+.text{
+  margin: auto 50px
+}
+.comments{
+   margin: 20px 20px 10px 0px;
+   text-align: right;
+}
+

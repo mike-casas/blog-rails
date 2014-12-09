@@ -1,7 +1,33 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
 
- <div class="table-responsive">
+<% @articles.each do |a| %>
+
+<div class="article">
+<div class="row">
+  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    <div class="title"><%= a.title %></div>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+     <div class="date"><%= a.created_at.strftime("%B %d, %Y") %></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="text"><%= a.text %></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+     <div class="comments"><a href="#">Comentarios <span class="badge"><%= a.comments.count %></span></a>
+
+</div>
+  </div>
+</div>
+
+</div>
+
+<% end %>
+<!--  <div class="table-responsive">
    <table class="table table-hover">
      <thead>
        <tr>
@@ -16,6 +42,9 @@
        <tr>
          <td> <%= a.title %></td>
          <td> <%= a.text %></td>
+         <td><%= link_to "mostrar", article_path(a) %></td>
+         <td><%= link_to "edit", edit_article_path(a) %></td>
+         <td><%= link_to "delete", article_path(a) ,method: :delete , data:{ confirm:('desea eliminar el articulo ?')}%></td>
        </tr>
        <% end %>
      </tbody>
@@ -23,3 +52,4 @@
 
    <%= link_to 'Nuevo article',new_article_path%>
  </div>
+ -->
