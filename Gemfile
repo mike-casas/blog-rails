@@ -41,6 +41,9 @@ gem 'spring',        group: :development
 
 gem 'redactor-rails'
 
+#gem de autenticacion
+
+gem 'devise'
 
 gem "annotate", "~> 2.6.5"
 gem "roadie", "~> 2.4"
