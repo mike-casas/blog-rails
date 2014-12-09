@@ -44,6 +44,9 @@ gem 'redactor-rails'
 #gem de autenticacion
 
 gem 'devise'
+# gem gravatar
+
+gem 'gravatar-ultimate'
 
 gem "annotate", "~> 2.6.5"
 gem "roadie", "~> 2.4"

@@ -86,3 +86,9 @@ a:hover{
   color: black;
   text-decoration: none;
 }
+
+.autor-name{
+
+    padding-top: 10px;
+    font-weight: bold;
+}

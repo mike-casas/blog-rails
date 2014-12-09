@@ -7,7 +7,7 @@ before_action :authenticate_user!, :except => [:show, :index]
 
   def index
       @articles= Article.all
-      @article_order= Article.last_article
+      @article_order= Article.last_article.limit(5)
   end
 
   def new
@@ -15,6 +15,7 @@ before_action :authenticate_user!, :except => [:show, :index]
   end
   def create
    @article=Article.new(parametros)
+   @article.user_id = current_user.id
    if @article.save
    redirect_to @article
    else
