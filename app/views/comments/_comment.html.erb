@@ -1,0 +1,22 @@
+<div class="row comments-list">
+<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+      <div class="comments-text">
+
+          <p>
+             <strong>
+             <%= l(comment.created_at, format:"%B %d, %Y") %>
+             </strong>
+          </p>
+
+      <p>
+        <%= comment.body %>
+      </p>
+      </div>
+</div>
+
+       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+       <%= image_tag(Gravatar.new(comment.user.email).image_url+"?s=50", class:"img-rounded avatar-comments") %>
+       </div>
+
+</div>

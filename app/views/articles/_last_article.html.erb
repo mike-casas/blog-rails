@@ -1,0 +1,14 @@
+
+<div class="last-article">Ultimos Articulos</div>
+
+ <% @article_order.each do |a| %>
+     <div class="last-article-text">
+     <p><strong><%= link_to a.title, article_path(a)%></strong></p>
+     <p><%= a.created_at.strftime("%B %d, %Y") %></p>
+     </div>
+ <% end %>
+ <br/>
+   <% if user_signed_in? %>
+  <%= link_to "Crear Articulo", new_article_path , class:"btn btn-success last-article"%>
+   <%end%>
+

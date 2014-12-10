@@ -1,0 +1,22 @@
+<%= form_for @article  do |f| %>
+<% if @article.errors.any? %>
+<div id="error_explanation">
+    <h2><%= pluralize(@article.errors.count, "error") %> prohibited
+      this article from being saved:</h2>
+    <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+<p>
+<%= f.label :title, "Title" %>
+<%= f.text_field :title , class:"form-control"%>
+</p>
+<p>
+<%= f.label :text, "Text" %>
+<%= f.text_area :text, :class => "redactor", :rows => 100, :cols => 120 %>
+  </p>
+<%= f.submit class:"btn btn-success" %>
+<% end %>
