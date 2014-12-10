@@ -113,3 +113,13 @@ a:hover{
 
   margin-top: 40px;
 }
+
+.user-name{
+
+    padding-top: 20px;
+}
+
+.user-name a{
+   color: red;
+  font-weight: bold;
+}
