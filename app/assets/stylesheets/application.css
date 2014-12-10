@@ -101,5 +101,13 @@ a:hover{
 }
 
 .avatar-comments{
-  margin:20px;
+
+}
+.padding{
+  padding: 0px;
+  margin:0px;
+}
+.panel-login{
+
+  margin-top: 40px;
 }
