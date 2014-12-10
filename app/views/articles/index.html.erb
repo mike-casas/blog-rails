@@ -11,12 +11,23 @@
      <div class="date"><%= a.created_at.strftime("%B %d, %Y") %></div>
   </div>
 </div>
+    <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center">
+               <%= image_tag(Gravatar.new(a.user.email).image_url+"?s=130", class:"img-circle avatar-comments") %>
+               <p class="autor-name"><%= a.user.name %></p>
 
-<div class="row">
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+             <div class="text"><%= truncate_html(a.text, length: 300,omission: link_to(' ...Leer más', article_path(a)))%></div>
+
+            </div>
+
+    </div>
+<!-- <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="text"><%= truncate_html(a.text, length: 300,omission: link_to(' ...Leer más', article_path(a)))%></div>
   </div>
-</div>
+</div> -->
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
      <div class="comments">Comentarios <span class="badge"><%= a.comments.count %></span>

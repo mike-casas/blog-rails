@@ -66,6 +66,13 @@ margin: 20px;
    text-align: right;
 }
 
+.comments-list{
+    background:#E1E0E0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 1px
+}
 .comments-text{
 
   margin-left: 20px;
@@ -91,4 +98,8 @@ a:hover{
 
     padding-top: 10px;
     font-weight: bold;
+}
+
+.avatar-comments{
+  margin:20px;
 }
