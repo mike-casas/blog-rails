@@ -2,12 +2,10 @@ class ArticlesController < ApplicationController
 
 before_action :authenticate_user!, :except => [:show, :index]
 
-
-
-
   def index
       @articles= Article.all
       @article_order= Article.last_article.limit(5)
+      @comentados= Comment.agrupar.first(2)
   end
 
   def new

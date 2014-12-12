@@ -8,6 +8,18 @@
      </div>
  <% end %>
  <br/>
+
+<div class="last-article">Más Comentados</div>
+ <% @comentados.each do |c, x| %>
+   <div class="last-article-text">
+     <% @a=Article.find(c) %>
+     <p><strong><%= link_to @a.title, article_path(@a)%></strong></p>
+     <p><%=l(@a.created_at, format: "%B %d, %Y")%></p>
+     <p><%= x %> comentarios</p>
+   </div>
+<% end %>
+
+  <br/>
    <% if user_signed_in? %>
   <%= link_to "Crear Articulo", new_article_path , class:"btn btn-success last-article"%>
    <%end%>
